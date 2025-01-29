@@ -24,6 +24,7 @@
           colors: {
             clifford: '#da373d',
             "bike-primary": '#E76F51',
+            "bike-primary-footer": '#0B0D17',
 
 
           }
@@ -213,7 +214,7 @@
     </section>
     <section class="my-16 md:container mx-auto">
       <div class="flex justify-center mb-10">
-        <h1 class="font-semibold text-4xl items-center ">Happy Clients says</h1>
+        <h1 class="font-semibold text-4xl items-center ">Happy <span class="text-bike-primary">Clients says</span></h1>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div class="border px-auto shadow-md">
@@ -287,14 +288,14 @@
     <section class="my-16 md:container mx-auto">
       <div>
         <div>
-          <h2 class="flex items-center justify-center font-semibold text-4xl">Frequently Asked Questions </h2>
+          <h2 class="flex items-center justify-center font-semibold text-4xl">Frequently <span class="text-bike-primary">Asked Questions</span> </h2>
         </div>
         <div>
           <div class="hero mt-10">
             <div class="hero-content flex-col lg:flex-row gap-10">
               <img
                 src="./images/others/faq.png"
-                class="max-w-md rounded-lg shadow-2xl" />
+                class="lg:max-w-md rounded-lg shadow-2xl" />
               <div class="space-y-5 ">
                 <div class="collapse collapse-arrow bg-base-200 border border-blue-100 ">
                   <input type="radio" name="my-accordion-2" checked="checked" />
@@ -340,8 +341,35 @@
       </div>
     </section>
   </main>
-  <footer>
-
+  <footer class="my-16 max-w-[1640px] mx-auto bg-bike-primary-footer ">
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:px-40 px-20 lg:py-10 lg:gap-40 gap-5">
+      <div class="text-white lg:pt-32  space-y-4">
+        <div class="">
+          <div class="flex space-x-5">
+            <p>Download Now</p>
+            <p> License</p>
+          </div>
+        </div>
+        <div class="flex space-x-5 flex-wrap">
+          <p>About</p>
+          <p>Features</p>
+          <p>Pricing</p>
+          <p>Careers</p>
+          <p>Help</p>
+          <p>Privacy-Policy</p>
+        </div>
+      </div>
+      <div class="lg:pt-32 pt-4 space-y-4">
+        <p class="font-semibold text-white">Get the App</p>
+        <div class="w-36 ">
+          <img src="./images/others/android.png" alt="">
+        </div>
+        <div class="w-36 ">
+          <img src="./images/others/ios.png" alt="">
+        </div>
+      </div>
+      <p class="text-white">© 2020 bike. All rights reserved</p>
+    </div>
   </footer>
 </body>
 
